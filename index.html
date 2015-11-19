@@ -3,8 +3,34 @@
 <head>
     <title>NewsSwipe</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="implementedCss/style.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>NewsSwipe, din snabba nyhetsbläddrare!</h1>
+    <div class="container" id="containterBox">
+        <h3>NewsSwipe</h3>
+        <div class="jumbotron" id="newsBox">
+            <!-- Här ska vi loopa igenom alla nyheter! -->
+        </div>
+        <footer class="footer">
+            <div class="col-xs-12">
+                <div class="col-xs-6">
+                    <button type="button" class="btn-warning btn-lg" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-primary btn-lg">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
