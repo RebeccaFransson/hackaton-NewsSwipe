@@ -1,2 +1,2 @@
 # hackaton-NewsSwipe
-Vårt proejkt till SPIIK hackaton 2015
+Vårt projekt till SPIIK hackaton 2015
