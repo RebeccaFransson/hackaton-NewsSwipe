@@ -16,11 +16,11 @@ body {
 
 #newsBox {
   position: relative;
-background: #fff;
+
 width: 84%;
 height: 45%;
 margin: auto;
-margin-top: 103px;
+
 }
 
 #newsBox ul {
