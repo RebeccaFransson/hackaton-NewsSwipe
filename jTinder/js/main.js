@@ -15,8 +15,8 @@ $("#tinderslide").jTinder({
 	animationRevertSpeed: 200,
 	animationSpeed: 400,
 	threshold: 1,
-	likeSelector: '.like',
-	dislikeSelector: '.dislike'
+	likeSelector: '.glyphicon-ok',
+	dislikeSelector: '.glyphicon-remove'
 });
 
 /**

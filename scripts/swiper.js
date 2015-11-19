@@ -1,7 +1,7 @@
 function init() {
   $("#newsBox").jTinder({
     onDislike: function (item) {
-        alert("It's a dislike");
+        //alert("It's a dislike");
     },
     onLike: function (item) {
         //alert('Like image ' + (item.index()+1));
@@ -14,6 +14,20 @@ function init() {
     likeSelector: '.glyphicon-ok',
     dislikeSelector: '.glyphicon-remove'
   });
+
+
+  document.querySelector(".glyphicon-remove").addEventListener("click", function(){
+    //console.log(Plugin)
+    $("#newsBox").jTinder('dislike');
+
+  });
+
+  document.querySelector(".glyphicon-ok").addEventListener("click", function(){
+    //console.log(Plugin)
+    $("#newsBox").jTinder('like');
+
+});
+
 }
 
 window.onload = function() {
