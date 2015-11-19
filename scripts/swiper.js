@@ -4,7 +4,8 @@ function init() {
         alert('Dislike image ' + (item.index()+1));
     },
     onLike: function (item) {
-        alert('Like image ' + (item.index()+1));
+        //alert('Like image ' + (item.index()+1));
+        DisplayArticle(1);
     },
     animationRevertSpeed: 200,
     animationSpeed: 400,
@@ -20,4 +21,6 @@ window.onload = function() {
 };
 
 function DisplayArticle(ArticleID) {
+  document.getElementById("Article").className = "show";
+
   }
