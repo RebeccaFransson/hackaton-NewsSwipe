@@ -32,3 +32,13 @@ width: 94%;
 .showFullPage{
   overflow: scroll;
 }
+
+#articlediv{
+  height: 96%;
+width: 87%;
+position: fixed;
+background-color: yellow;
+z-index: 100;
+top: 2%;
+right: 7%;
+}
