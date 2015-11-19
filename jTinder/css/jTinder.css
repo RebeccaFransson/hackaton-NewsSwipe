@@ -16,10 +16,11 @@ body {
 
 #newsBox {
   position: relative;
-
+/*margin-top: 25%;*/
 width: 84%;
 height: 45%;
 margin: auto;
+top: 15%;
 
 }
 
