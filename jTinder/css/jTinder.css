@@ -14,7 +14,7 @@ body {
     padding: 5%;
 }
 
-#tinderslide {
+#newsBox {
   position: relative;
 background: #fff;
 width: 84%;
@@ -23,14 +23,14 @@ margin: auto;
 margin-top: 103px;
 }
 
-#tinderslide ul {
+#newsBox ul {
     margin: 0;
     position: relative;
     display: block;
     height: 100%;
 }
 
-#tinderslide li {
+#newsBox li {
     display: block;
     width: 100%;
     height: 100%;
@@ -59,7 +59,7 @@ margin-top: 103px;
 }
 
 /* Image text */
-#tinderslide li h2 {
+#newsBox li h2 {
     color: #fff;
     font-size: 30px;
     text-align: center;
@@ -71,7 +71,7 @@ margin-top: 103px;
 }
 
 /* Image rotation */
-#tinderslide li.pane1 {
+#newsBox li.pane1 {
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -o-transform: rotate(-1deg);
@@ -79,7 +79,7 @@ margin-top: 103px;
     transform: rotate(-1deg);
 }
 
-#tinderslide li.pane2 {
+#newsBox li.pane2 {
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
     -o-transform: rotate(2deg);
@@ -88,8 +88,8 @@ margin-top: 103px;
 }
 
 /* Like & dislike badge images */
-#tinderslide .like,
-#tinderslide .dislike {
+#newsBox .like,
+#newsBox .dislike {
     background: url("../img/liked.png") no-repeat scroll 0 0;
     opacity: 0;
     height: 80px;
@@ -108,14 +108,14 @@ margin-top: 103px;
     backface-visibility: hidden;
 }
 
-#tinderslide .dislike {
+#newsBox .dislike {
     right: 45px;
     left: auto;
     background: url("../img/nope.png") no-repeat scroll 0 0;
 }
 
 /* Image container */
-#tinderslide .img {
+#newsBox .img {
     height: 90%;
     width: 100%;
     margin-bottom: 5px;
@@ -189,15 +189,15 @@ margin-top: 103px;
 
 /* jTinder images */
 
-#tinderslide .pane3 .img {
+#newsBox .pane3 .img {
     background: url("../../pics/1.jpg") no-repeat scroll center center;
     background-size: cover;
 }
-#tinderslide .pane2 .img {
-    background: url("../../pics/2.png") no-repeat scroll center center;
+#newsBox .pane2 .img {
+    background: url("../../pics/2.jpg") no-repeat scroll center center;
     background-size: cover;
 }
-#tinderslide .pane1 .img {
+#newsBox .pane1 .img {
     background: url("../../pics/3.jpg") no-repeat scroll center center;
     background-size: cover;
 }

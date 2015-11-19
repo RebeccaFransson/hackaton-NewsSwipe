@@ -1,17 +1,17 @@
 function init() {
-  $("#tinderslide").jTinder({
+  $("#newsBox").jTinder({
     onDislike: function (item) {
-        alert('Dislike image ' + (item.index()+1));
+        alert("It's a dislike");
     },
     onLike: function (item) {
         //alert('Like image ' + (item.index()+1));
-        DisplayArticle(1);
+        alert("It's a like");
     },
     animationRevertSpeed: 200,
     animationSpeed: 400,
     threshold: 1,
-    likeSelector: '.like',
-    dislikeSelector: '.dislike'
+    likeSelector: '.glyphicon-ok',
+    dislikeSelector: '.glyphicon-remove'
   });
 }
 
@@ -21,6 +21,7 @@ window.onload = function() {
 };
 
 function DisplayArticle(ArticleID) {
-  document.getElementById("Article").className = "show";
+  //document.getElementById("Article").className = "show";
+  //document.getElementByTagName("body").className = "showFullPage";
 
   }

@@ -32,3 +32,11 @@ h3 {
     position: absolute;
     bottom: 4%;
 }
+
+body{
+  overflow: hidden;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+   font-size: 40px;
+}
