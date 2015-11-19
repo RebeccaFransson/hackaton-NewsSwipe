@@ -1,0 +1,45 @@
+#containterBox {
+    position:absolute;
+    padding: 0%;
+    background-color: lightgrey;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin: 10%
+}
+
+#newsBox {
+    margin: 10%;
+    margin-top: -5%;
+    background-color: #ffffff;
+}
+
+#buttonBox {
+    margin:10%
+position: fixed;
+    bottom: 4%;
+    width: 100%;
+}
+
+#settingsButton {
+    position: fixed;
+    top: 5%;
+    right: 10%;
+}
+
+/* Bootstrap element som vi själva justerat */
+.col-xs-6 {
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 4%;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 40px;
+}
