@@ -32,7 +32,6 @@ function init() {
 
 window.onload = function() {
   init();
-
 };
 
 function DisplayArticle(ArticleID) {
@@ -43,17 +42,11 @@ function DisplayArticle(ArticleID) {
   var articleCross = document.createElement("input");
     var stringwithwords = "Fromage paneer blue castello. Say cheese pecorino goat fondue cheddar red leicester queso brie. Jarlsberg caerphilly stilton dolcelatte say cheese pecorino port-salut monterey jack. Babybel st. agur blue cheese cheese triangles. Cheesy grin dolcelatte bocconcini. Jarlsberg macaroni cheese pecorino melted cheese rubber cheese cauliflower cheese dolcelatte cheddar. Croque monsieur melted cheese stinking bishop red leicester emmental smelly cheese edam squirty cheese. Macaroni cheese mascarpone ricotta cheese and biscuits cottage cheese say cheese the big cheese cottage cheese. Red leicester cheese triangles stinking bishop.    Cheesy grin dolcelatte bocconcini. Jarlsberg macaroni cheese pecorino melted cheese rubber cheese cauliflower cheese dolcelatte cheddar. Croque monsieur melted cheese stinking bishop red leicester emmental smelly cheese edam squirty cheese. Macaroni cheese mascarpone ricotta cheese and biscuits cottage cheese say cheese the big cheese cottage cheese. Red leicester cheese triangles stinking bishop."
 
-
-
-
-
-
   articleCross.setAttribute("id","articlecross");
   articleDiv.setAttribute("id", "articlediv");
   articleHeader.setAttribute("id", "articleheader");
   articleText.setAttribute("id", "articletext");
   articleImage.setAttribute("id", "articleimage");
-
 
   document.body.appendChild(articleDiv);
   document.getElementById("articlediv").appendChild(articleCross);
@@ -63,7 +56,7 @@ function DisplayArticle(ArticleID) {
 
   document.getElementById("articleheader").innerHTML = "works";
   document.getElementById("articletext").innerHTML = stringwithwords;
-  document.getElementById("articleimage").setAttribute("src", "pics/3.jpg");
+  document.getElementById("articleimage").setAttribute("href", "pics/3.jpg");
 
       articleCross.type = "button";
       articleCross.className="btn btn-danger";

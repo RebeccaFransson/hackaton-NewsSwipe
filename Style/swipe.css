@@ -1,5 +1,5 @@
 img{
-  width: 98%;
+  width: 300px;
 }
 
 
@@ -19,7 +19,7 @@ img{
   height: 96%;
 width: 87%;
 position: fixed;
-background-color: #21ABC0;
+background-color: #798080;
 z-index: 100;
 top: 2%;
 right: 7%;
