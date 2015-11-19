@@ -40,8 +40,15 @@ function DisplayArticle(ArticleID) {
   var articleHeader = document.createElement("h1");
   var articleText = document.createElement("p");
   var articleImage = document.createElement("img");
+  var articleCross = document.createElement("input");
     var stringwithwords = "Fromage paneer blue castello. Say cheese pecorino goat fondue cheddar red leicester queso brie. Jarlsberg caerphilly stilton dolcelatte say cheese pecorino port-salut monterey jack. Babybel st. agur blue cheese cheese triangles. Cheesy grin dolcelatte bocconcini. Jarlsberg macaroni cheese pecorino melted cheese rubber cheese cauliflower cheese dolcelatte cheddar. Croque monsieur melted cheese stinking bishop red leicester emmental smelly cheese edam squirty cheese. Macaroni cheese mascarpone ricotta cheese and biscuits cottage cheese say cheese the big cheese cottage cheese. Red leicester cheese triangles stinking bishop.    Cheesy grin dolcelatte bocconcini. Jarlsberg macaroni cheese pecorino melted cheese rubber cheese cauliflower cheese dolcelatte cheddar. Croque monsieur melted cheese stinking bishop red leicester emmental smelly cheese edam squirty cheese. Macaroni cheese mascarpone ricotta cheese and biscuits cottage cheese say cheese the big cheese cottage cheese. Red leicester cheese triangles stinking bishop."
 
+
+
+
+
+
+  articleCross.setAttribute("id","articlecross");
   articleDiv.setAttribute("id", "articlediv");
   articleHeader.setAttribute("id", "articleheader");
   articleText.setAttribute("id", "articletext");
@@ -49,6 +56,7 @@ function DisplayArticle(ArticleID) {
 
 
   document.body.appendChild(articleDiv);
+  document.getElementById("articlediv").appendChild(articleCross);
   document.getElementById("articlediv").appendChild(articleHeader);
   document.getElementById("articlediv").appendChild(articleImage);
   document.getElementById("articlediv").appendChild(articleText);
@@ -56,6 +64,18 @@ function DisplayArticle(ArticleID) {
   document.getElementById("articleheader").innerHTML = "works";
   document.getElementById("articletext").innerHTML = stringwithwords;
   document.getElementById("articleimage").setAttribute("href", "pics/3.jpg");
+
+      articleCross.type = "button";
+      articleCross.className="btn btn-danger";
+      articleCross.value="Stäng"
+      //articleCross.className+="glyphicon glyphicon-remove";
+
+
+  articleCross.addEventListener("click", function(){
+    console.log("Väck med den då");
+    $("#articlediv").remove();
+
+});
   //document.getElementById("articletext").innerHTML = "works";
   //document.getElementById("Article").className = "show";
   //document.getElementByTagName("body").className = "showFullPage";

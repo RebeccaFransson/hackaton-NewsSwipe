@@ -30,3 +30,8 @@ padding: 14px;
 #articleheader{
   text-transform: uppercase;
 }
+
+#articlecross{
+  position: fixed;
+right: 14%;
+}
