@@ -63,7 +63,7 @@ function DisplayArticle(ArticleID) {
 
   document.getElementById("articleheader").innerHTML = "works";
   document.getElementById("articletext").innerHTML = stringwithwords;
-  document.getElementById("articleimage").setAttribute("href", "pics/3.jpg");
+  document.getElementById("articleimage").setAttribute("src", "pics/3.jpg");
 
       articleCross.type = "button";
       articleCross.className="btn btn-danger";
