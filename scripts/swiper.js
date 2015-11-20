@@ -63,7 +63,7 @@ window.onload = function() {
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://api.overviewnews.com/v1/search.json?key=DsUKxG2iiZV9BRnspdDbdmAiaixvCvHstsQZ&q=media&fulltext=true", false);
+  xhttp.open("GET", "https://api.overviewnews.com/v1/search.json?key=DsUKxG2iiZV9BRnspdDbdmAiaixvCvHstsQZ&q=media&fulltext=true&require_images=true&unique=true", false);
   xhttp.send();
 
    return JSON.parse(xhttp.responseText)["result"];
@@ -71,25 +71,42 @@ function loadDoc() {
 
 function DisplayArticleStart(Article) {
   console.log(Article);
-  document.querySelector('#pic1').setAttribute("src", Article[0].image);
+  if(Article[0].image != ""){
+    document.querySelector('#pic1').setAttribute("src", Article[0].image);
+  }
+  else{
+    document.querySelector('#pic1').setAttribute("src", "pics/404.jpg");
+  }
+
+
   document.querySelector('#texten1').innerHTML = Article[0].headline;
-  document.querySelector('#pic2').setAttribute("src", Article[1].image);
+
+  if(Article[1].image != ""){document.querySelector('#pic2').setAttribute("src", Article[1].image);}
+
   document.querySelector('#texten2').innerHTML = Article[1].headline;
-  document.querySelector('#pic3').setAttribute("src", Article[2].image);
+  if(Article[1].image != ""){document.querySelector('#pic3').setAttribute("src", Article[2].image);}
+
   document.querySelector('#texten3').innerHTML = Article[2].headline;
-  document.querySelector('#pic4').setAttribute("src", Article[3].image);
+  if(Article[1].image != ""){document.querySelector('#pic4').setAttribute("src", Article[3].image);}
+
   document.querySelector('#texten4').innerHTML = Article[3].headline;
-  document.querySelector('#pic5').setAttribute("src", Article[4].image);
+  if(Article[1].image != ""){document.querySelector('#pic5').setAttribute("src", Article[4].image);}
+
   document.querySelector('#texten5').innerHTML = Article[4].headline;
-  document.querySelector('#pic6').setAttribute("src", Article[5].image);
+  if(Article[1].image != ""){document.querySelector('#pic6').setAttribute("src", Article[5].image);}
+
   document.querySelector('#texten6').innerHTML = Article[5].headline;
-  document.querySelector('#pic7').setAttribute("src", Article[6].image);
+  if(Article[1].image != ""){document.querySelector('#pic7').setAttribute("src", Article[6].image);}
+
   document.querySelector('#texten7').innerHTML = Article[6].headline;
-  document.querySelector('#pic8').setAttribute("src", Article[7].image);
+  if(Article[1].image != ""){document.querySelector('#pic8').setAttribute("src", Article[7].image);}
+
   document.querySelector('#texten8').innerHTML = Article[7].headline;
-  document.querySelector('#pic9').setAttribute("src", Article[8].image);
+  if(Article[1].image != ""){document.querySelector('#pic9').setAttribute("src", Article[8].image);}
+
   document.querySelector('#texten9').innerHTML = Article[8].headline;
-  document.querySelector('#pic10').setAttribute("src", Article[9].image);
+  if(Article[1].image != ""){document.querySelector('#pic10').setAttribute("src", Article[9].image);}
+
   document.querySelector('#texten10').innerHTML = Article[9].headline;
   // document.querySelector('#pic3').setAttribute("src", Article.image);
   // document.querySelector('#texten3').innerHTML = Article.headline;
