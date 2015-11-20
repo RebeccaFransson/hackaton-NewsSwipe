@@ -42,8 +42,12 @@ DisplayArticleStart(object[i]);
 }
 
 window.onload = function() {
+
   init(loadDoc());
 
+// =======
+  //init();
+// >>>>>>> 53a03895832d897fec5d065a83365380b1024b25
 };
 
 // function Article(object) {
@@ -68,6 +72,10 @@ function loadDoc() {
 function DisplayArticleStart(Article) {
   document.querySelector('#pic3').setAttribute("src", Article.image);
   document.querySelector('#texten3').innerHTML = Article.headline;
+  // document.querySelector('#pic3').setAttribute("src", Article.image);
+  // document.querySelector('#texten3').innerHTML = Article.headline;
+  // document.querySelector('#pic3').setAttribute("src", Article.image);
+  // document.querySelector('#texten3').innerHTML = Article.headline;
 }
 function DisplayArticle(Article) {
   console.log(Article);
@@ -78,17 +86,11 @@ function DisplayArticle(Article) {
   var articleCross = document.createElement("input");
     var stringwithwords = "Fromage paneer blue castello. Say cheese pecorino goat fondue cheddar red leicester queso brie. Jarlsberg caerphilly stilton dolcelatte say cheese pecorino port-salut monterey jack. Babybel st. agur blue cheese cheese triangles. Cheesy grin dolcelatte bocconcini. Jarlsberg macaroni cheese pecorino melted cheese rubber cheese cauliflower cheese dolcelatte cheddar. Croque monsieur melted cheese stinking bishop red leicester emmental smelly cheese edam squirty cheese. Macaroni cheese mascarpone ricotta cheese and biscuits cottage cheese say cheese the big cheese cottage cheese. Red leicester cheese triangles stinking bishop.    Cheesy grin dolcelatte bocconcini. Jarlsberg macaroni cheese pecorino melted cheese rubber cheese cauliflower cheese dolcelatte cheddar. Croque monsieur melted cheese stinking bishop red leicester emmental smelly cheese edam squirty cheese. Macaroni cheese mascarpone ricotta cheese and biscuits cottage cheese say cheese the big cheese cottage cheese. Red leicester cheese triangles stinking bishop."
 
-
-
-
-
-
   articleCross.setAttribute("id","articlecross");
   articleDiv.setAttribute("id", "articlediv");
   articleHeader.setAttribute("id", "articleheader");
   articleText.setAttribute("id", "articletext");
   articleImage.setAttribute("id", "articleimage");
-
 
   document.body.appendChild(articleDiv);
   document.getElementById("articlediv").appendChild(articleCross);
@@ -96,9 +98,11 @@ function DisplayArticle(Article) {
   document.getElementById("articlediv").appendChild(articleImage);
   document.getElementById("articlediv").appendChild(articleText);
 
+
   document.getElementById("articleheader").innerHTML = Article.headline;
   document.getElementById("articletext").innerHTML = Article.text;
   document.getElementById("articleimage").setAttribute("src", Article.image);
+
 
       articleCross.type = "button";
       articleCross.className="btn btn-danger";

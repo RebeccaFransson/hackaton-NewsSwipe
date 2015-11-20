@@ -5,18 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css" rel="stylesheet">
+    <link href="implementedCss/style.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="jTinder/css/jTinder.css">
     <link rel="stylesheet" type="text/css" href="style/swipe.css">
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="container" id="containterBox">
       <header>
-        <img src="pics/0.png" />
+        <img id="logoImage" src="pics/LOGO.png" />
         <div id="navcontainer">
         <ul id="navlist">
           <li class="glyphicon glyphicon-align-justify">
@@ -28,11 +29,38 @@
         </div>
      </header>
         <!-- <h3>NewsSwipe</h3> -->
+        <!-- <div id="settingsBox">
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="inputLocation">Plats: </label>
+                    <div class="controls">
+                        <input type="text" id="inputLocation">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputKeyword">Nyckelord: </label>
+                    <div class="controls">
+                        <input type="text" id="inputKeyword" placeholder="Ex. Webb">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputInterval">Tidsintervall: </label>
+                    <div class="controls">
+                        <div class="charts-touch">
+                            <ul class="chart2">
+                                <li id="chart" class="chart"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn saveSettings">Sapra</button>
+            </form>
+        </div> -->
         <div id="newsBox">
           <ul>
-              <li class="pane1"><div id="pic1" class="img"></div><div id="texten1">Nyhet Nummer 3</div><div class="like"></div><div class="dislike"></div></li>
-              <li class="pane2"><div id="pic2" class="img"></div><div id="texten2">Nyhet Nummer 2</div><div class="like"></div><div class="dislike"></div></li>
-              <li class="pane3"><div  id="pic3"class="img"></div><div id="texten3">Nyhet Nummer 1</div><div class="like"></div><div class="dislike"></div></li>
+              <li class="pane1"><img id="pic3" class="img" /><div id="texten1">Nyhet Nummer 3</div><div class="like"></div><div class="dislike"></div></li>
+              <li class="pane2"><img id="pic2" class="img" /></div><div id="texten2">Nyhet Nummer 2</div><div class="like"></div><div class="dislike"></div></li>
+              <li class="pane3"><img id="pic1" class="img" /></div><div id="texten3">Nyhet Nummer 1</div><div class="like"></div><div class="dislike"></div></li>
           </ul>
         </div>
         <footer class="footer">
