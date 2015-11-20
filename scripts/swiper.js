@@ -1,4 +1,4 @@
-var i = 5;
+var i = 9;
 //var load = ;
 
 function init(object) {
@@ -83,6 +83,14 @@ function DisplayArticleStart(Article) {
   document.querySelector('#texten5').innerHTML = Article[4].headline;
   document.querySelector('#pic6').setAttribute("src", Article[5].image);
   document.querySelector('#texten6').innerHTML = Article[5].headline;
+  document.querySelector('#pic7').setAttribute("src", Article[6].image);
+  document.querySelector('#texten7').innerHTML = Article[6].headline;
+  document.querySelector('#pic8').setAttribute("src", Article[7].image);
+  document.querySelector('#texten8').innerHTML = Article[7].headline;
+  document.querySelector('#pic9').setAttribute("src", Article[8].image);
+  document.querySelector('#texten9').innerHTML = Article[8].headline;
+  document.querySelector('#pic10').setAttribute("src", Article[9].image);
+  document.querySelector('#texten10').innerHTML = Article[9].headline;
   // document.querySelector('#pic3').setAttribute("src", Article.image);
   // document.querySelector('#texten3').innerHTML = Article.headline;
   // document.querySelector('#pic3').setAttribute("src", Article.image);
