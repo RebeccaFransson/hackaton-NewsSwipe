@@ -190,18 +190,18 @@ top: 15%;
 
 /* jTinder images */
 
-#newsBox .pane3 .img {
+/*#newsBox .pane3 .img {
     background: url("../../pics/1.jpg") no-repeat scroll center center;
     background-size: cover;
-}
+}*/
 #newsBox .pane2 .img {
     background: url("../../pics/2.jpg") no-repeat scroll center center;
     background-size: cover;
 }
-#newsBox .pane1 .img {
+/*#newsBox .pane1 .img {
     background: url("../../pics/3.jpg") no-repeat scroll center center;
     background-size: cover;
-}
+}*/
 
 /* jTinder status text */
 #status {

@@ -1,12 +1,22 @@
-function init() {
+var i = 0;
+//var load = ;
+
+function init(object) {
+DisplayArticleStart(object[i]);
   $("#newsBox").jTinder({
     onDislike: function (item) {
-        //alert("It's a dislike");
+      loadDoc();
+      //DisplayArticleStart(object[i]);
+      i++;  //alert("It's a dislike");
     },
     onLike: function (item) {
         //alert('Like image ' + (item.index()+1));
         //alert("It's a like");
-        DisplayArticle(1);
+
+        DisplayArticle(object[i]);
+        console.log(object[i]);
+        i++;
+        //DisplayArticleStart(object[i]);
     },
     animationRevertSpeed: 200,
     animationSpeed: 400,
@@ -28,14 +38,39 @@ function init() {
 
 });
 
+
 }
 
 window.onload = function() {
-  init();
+  init(loadDoc());
 
 };
 
-function DisplayArticle(ArticleID) {
+// function Article(object) {
+//   return object[
+//   "headline" = object.headline,
+//   "image" = object.image,
+//   "lead" = object.lead];
+//   //console.log(this.lead);
+// }
+
+//var firstArticle = new Article()
+
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "https://api.overviewnews.com/v1/search.json?key=DsUKxG2iiZV9BRnspdDbdmAiaixvCvHstsQZ&q=media&fulltext=true", false);
+  xhttp.send();
+
+   return JSON.parse(xhttp.responseText)["result"];
+}
+
+function DisplayArticleStart(Article) {
+  document.querySelector('#pic3').setAttribute("src", Article.image);
+  document.querySelector('#texten3').innerHTML = Article.headline;
+}
+function DisplayArticle(Article) {
+  console.log(Article);
   var articleDiv = document.createElement("div");
   var articleHeader = document.createElement("h1");
   var articleText = document.createElement("p");
@@ -61,9 +96,9 @@ function DisplayArticle(ArticleID) {
   document.getElementById("articlediv").appendChild(articleImage);
   document.getElementById("articlediv").appendChild(articleText);
 
-  document.getElementById("articleheader").innerHTML = "works";
-  document.getElementById("articletext").innerHTML = stringwithwords;
-  document.getElementById("articleimage").setAttribute("src", "pics/3.jpg");
+  document.getElementById("articleheader").innerHTML = Article.headline;
+  document.getElementById("articletext").innerHTML = Article.text;
+  document.getElementById("articleimage").setAttribute("src", Article.image);
 
       articleCross.type = "button";
       articleCross.className="btn btn-danger";

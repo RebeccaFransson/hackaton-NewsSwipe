@@ -1,0 +1,14 @@
+<script>
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "https://api.overviewnews.com/v1/search.json?key=DsUKxG2iiZV9BRnspdDbdmAiaixvCvHstsQZ&q=media", false);
+  xhttp.send();
+  console.log(JSON.parse(xhttp.responseText)["result"][0]);
+}
+
+window.onload = function() {
+  loadDoc();
+
+};
+</script>
